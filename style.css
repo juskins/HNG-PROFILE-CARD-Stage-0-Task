@@ -1,0 +1,85 @@
+body {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+}
+
+article {
+  padding: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  gap: 16px;
+  background-color: #1e2128ff;
+  box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
+  /* max-width: 800px; */
+}
+
+.top-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar img {
+  object-fit: cover;
+  width: 64px;
+  height: 64px;
+  border-radius: 32px;
+}
+.name{
+  font-weight: 700;
+  font-size: 18px;
+}
+.bio{
+  color:#BDC1CA
+}
+
+.time-content{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+ul{
+  display: flex;
+  gap: 30px;
+  justify-content: start;
+  flex-wrap: wrap;
+
+}
+ul li{
+  list-style: none;
+  font-size: 12px;  
+  font-weight: 700;
+  background: #262A33FF;
+  padding: 10px 20px;
+  border-radius: 3px;
+  margin: 0px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: transparent;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+a{
+  color:white;
+  text-decoration: none;
+}
+ul.dislikes li{
+  color:red;
+  border-radius: 50px;
+  border-color:red;
+  border-style: solid;
+  padding: 5px 15px;
+}
+
+
+
+
+
+
