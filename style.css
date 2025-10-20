@@ -5,17 +5,21 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 90vh;
+   font-family: "Poppins", sans-serif;
+  /* height: 100vh; */
 }
 
-article {
+.container {
   padding: 16px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 14px;
   line-height: 20px;
   gap: 16px;
-  background-color: #1e2128ff;
+  /* background-color: #1e2128ff; */
+  background-color: #000000;
   box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
-  /* max-width: 800px; */
+  max-width: 800px;
+  width: 90%;
+  height: 100%;
 }
 
 .top-content {
@@ -30,32 +34,31 @@ article {
   height: 64px;
   border-radius: 32px;
 }
-.name{
+.name {
   font-weight: 700;
   font-size: 18px;
 }
-.bio{
-  color:#BDC1CA
+.bio {
+  color: #bdc1ca;
 }
 
-.time-content{
+.time-content {
   display: flex;
   gap: 10px;
   align-items: center;
 }
 
-ul{
+ul {
   display: flex;
   gap: 30px;
   justify-content: start;
   flex-wrap: wrap;
-
 }
-ul li{
+ul li {
   list-style: none;
-  font-size: 12px;  
+  font-size: 12px;
   font-weight: 700;
-  background: #262A33FF;
+  background: #262a33ff;
   padding: 10px 20px;
   border-radius: 3px;
   margin: 0px;
@@ -66,20 +69,124 @@ ul li{
   gap: 10px;
   align-items: center;
 }
-a{
-  color:white;
+.social-content ul li:hover {
+  border-color: #1e90ff;
+}
+a {
+  color: white;
   text-decoration: none;
 }
-ul.dislikes li{
-  color:red;
+ul.dislikes li {
+  color: red;
   border-radius: 50px;
-  border-color:red;
+  border-color: red;
   border-style: solid;
   padding: 5px 15px;
 }
 
+.nav-menus {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin-bottom: 20px;
+  background-color: transparent;
+}
+.nav-menus li {
+  list-style: none;
+  font-size: 14px;
+  font-weight: 800;
+  background: transparent;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.nav-menus li:hover {
+  text-decoration: underline;
+}
+
+.nav-menus a:hover, .nav-menus a.active {
+  color: #1e90ff;
+  text-decoration: underline;
+}
+
+
+main {
+  /* padding: 1rem; */
+  border-radius: 8px;
+}
+
+.form{
+  background-color: #1e2128ff;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  width: 60%;
+  margin: auto;
+  border-radius: 10px;
+  border:1px solid #323743FF;
+  box-shadow: 0px 0px 1px #171a1f12, inset 0px 0px 2px #171a1f1F;
+}
+
+.form-p{
+  color: #bdc1ca;
+}
+.form-group {
+  margin-bottom: 1.2rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  border: 1px solid #323743FF;
+  border-radius: 4px;
+  background-color: #000000;
+  color: white;
+}
 
 
 
+button {
+  background: #1e90ff;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background: #003060;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9rem;
+}
+
+.success-message {
+  color: green;
+  margin-top: 1rem;
+}
 
 
+/* About pagge styles */
+main h1.about-h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+section h2{
+  font-size: 20px;
+}
+section p{
+  color: #bdc1ca;
+  
+}

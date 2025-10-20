@@ -4,61 +4,118 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Poppins font import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Profile card</title>
   </head>
   <body>
-    <div>
+    <div class="container">
+      <header>
+        <nav>
+          <ul class="nav-menus">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about-me.html">About me</a></li>
+            <li><a href="contact-us.html">Contact us</a></li>
+          </ul>
+        </nav>
+      </header>
       <article data-testid="test-profile-card">
         <div class="top-content">
-         <figure class="avatar">
-            <img src="https://i.ibb.co/fzgs7Fwq/my-corporate-pic.jpg" data-testid="test-user-avatar" alt="my-corporate-pic" />
+          <figure class="avatar">
+            <img
+              src="https://i.ibb.co/fzgs7Fwq/my-corporate-pic.jpg"
+              data-testid="test-user-avatar"
+              alt="my-corporate-pic"
+            />
           </figure>
           <div class="header">
-            <header class="name" data-testid="test-user-name">Omojuwa Babatunde</header>
+            <header class="name" data-testid="test-user-name">
+              Omojuwa Babatunde
+            </header>
             <p class="bio" data-testid="test-user-bio">
               A passionate software engineer with a knack for building intuitive
               user interfaces. Enjoys exploring new technologies and solving
               complex problems.
             </p>
             <div class="time-content">
-               <p>Current time :</p>
-               <p data-testid="test-user-time"></p>
+              <p>Current time :</p>
+              <p data-testid="test-user-time"></p>
             </div>
           </div>
         </div>
-        
-        <hr>
+
+        <hr />
 
         <div class="social-content">
-         <p style="color: #BDC1CA;">Social Links</p>
+          <p style="color: #BDC1CA;">Social Links</p>
           <ul data-testid="test-user-social-links">
-            <li data-testid="test-user-social-linkedin"><i class="fa fa-linkedin-square" style="font-size:16px"></i><a href="http://www.linkedin.com/in/babatunde-omojuwa" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-            <li data-testid="test-user-social-github"><i class="fa fa-github-square" style="font-size:16px"></i><a href="http://www.github.com/juskins" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-            <li data-testid="test-user-social-twitter"><i class="fa fa-twitter-square" style="font-size:16px"></i><a href="https://x.com/tunde012" target="_blank" rel="noopener noreferrer">Twitter</a></li>
-            <li data-testid="test-user-social-website"><i class="fa fa-chrome" style="font-size:16px"></i><a href="https://dev-babatunde-omojuwa.pantheonsite.io/" target="_blank" rel="noopener noreferrer">Portfolio Website</a></li>
+            <li data-testid="test-user-social-linkedin">
+              <i class="fa fa-linkedin-square" style="font-size:16px"></i
+              ><a
+                href="http://www.linkedin.com/in/babatunde-omojuwa"
+                target="_blank"
+                rel="noopener noreferrer"
+                >LinkedIn</a
+              >
+            </li>
+            <li data-testid="test-user-social-github">
+              <i class="fa fa-github-square" style="font-size:16px"></i
+              ><a
+                href="http://www.github.com/juskins"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub</a
+              >
+            </li>
+            <li data-testid="test-user-social-twitter">
+              <i class="fa fa-twitter-square" style="font-size:16px"></i
+              ><a
+                href="https://x.com/tunde012"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Twitter</a
+              >
+            </li>
+            <li data-testid="test-user-social-website">
+              <i class="fa fa-chrome" style="font-size:16px"></i
+              ><a
+                href="https://dev-babatunde-omojuwa.pantheonsite.io/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Portfolio Website</a
+              >
+            </li>
           </ul>
         </div>
 
         <section class="hobbies-content">
-         <p style="color: #BDC1CA;">Hobbies</p>
+          <p style="color: #BDC1CA;">Hobbies</p>
           <ul data-testid="test-user-hobbies">
             <li>Reading</li>
             <li>Hiking</li>
             <li>Photography</li>
             <li>Coding</li>
           </ul>
-         </section>
+        </section>
 
-         <section class="dislikes-content">
-         <p style="color: #BDC1CA;">Dislikes</p>
+        <section class="dislikes-content">
+          <p style="color: #BDC1CA;">Dislikes</p>
           <ul class="dislikes" data-testid="test-user-dislikes">
             <li>Mondays</li>
             <li>Slow Internet</li>
             <li>Stress</li>
             <li>Love 😭🥲</li>
           </ul>
-         </section>
+        </section>
       </article>
     </div>
   </body>
